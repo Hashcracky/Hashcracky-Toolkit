@@ -1,6 +1,5 @@
-# Hashcracky Utility Toolkit Container
-This repository defines a multi-stage Docker build that packages several password-cracking–related utilities into a Alpine-based image.  
-The goal of this image is to make it easy to use and access tooling for cryptographic hash recovery research and training.
+# Hashcracky Toolkit Container
+This repository defines a multi-stage Docker build that packages several password-cracking–related utilities into a Alpine-based image. The goal of this image is to make it easy to use and access tooling for cryptographic hash recovery research and training. We are not the author of all tools used in this repository and are only providing an environment. Please consider supporting the tool creators.
 
 ## Included Tools
 
