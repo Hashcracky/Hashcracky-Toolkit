@@ -9,6 +9,10 @@ The image currently builds and bundles the following projects:
   - Source: [hashcracky/ptt](https://github.com/hashcracky/ptt)  
   - Description: Password Transformation Tool (ptt) is a versatile utility designed for password cracking.
 
+- **brainstorm**  
+  - Source: [hashcracky/brainstorm](https://github.com/hashcracky/brainstorm)  
+  - Description: Brainstorm is a focused text transformation tool designed to help generate and normalize candidate strings from raw text.
+
 - **rulechef**  
   - Source: [Cynosureprime/rulechef](https://github.com/Cynosureprime/rulechef)  
   - Description: A powerful tool for analyzing and generating rule chains using Markov chains and probabilistic transitions.

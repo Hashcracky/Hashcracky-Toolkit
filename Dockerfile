@@ -7,7 +7,9 @@ RUN mkdir -p /src/app && \
 WORKDIR /src/app
 
 RUN git clone https://github.com/hashcracky/ptt && \
-    cd ptt && go build .
+    git clone https://github.com/hashcracky/brainstorm && \
+    cd /src/app/ptt && go build . && \
+    cd /src/app/brainstorm && go build .
 
 # C BUILD LAYER
 # Dependencies:
@@ -42,6 +44,7 @@ COPY --from=cbuild /src/compile/rulecat/rulecat /bin/rulecat
 COPY --from=cbuild /src/compile/hashcat-utils/bin/*.bin /bin/
 COPY --from=cbuild /src/compile/hashcat-utils/src/*.pl /bin/
 COPY --from=gobuild /src/app/ptt/ptt /bin/ptt
+COPY --from=gobuild /src/app/brainstorm/brainstorm /bin/brainstorm
 
 COPY /scripts/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh

@@ -21,6 +21,7 @@ echo
 echo "The following tools are installed in this image:"
 echo
 echo "  - ptt"
+echo "  - brainstorm"
 echo "  - rulechef"
 echo "  - rulecat"
 echo "  - hashcat-utils (*.bin, *.pl)"
@@ -30,6 +31,9 @@ echo
 
 show_tool_info "ptt" \
     "https://github.com/hashcracky/ptt" 
+
+show_tool_info "brainstorm" \
+    "https://github.com/hashcracky/brainstorm" 
 
 show_tool_info "rulechef" \
     "https://github.com/Cynosureprime/rulechef" 
