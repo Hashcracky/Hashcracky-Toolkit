@@ -35,9 +35,7 @@ RUN git clone https://github.com/hashcat/hashcat-utils && \
 # - perl for hashcat-util scripts
 # - bind-tools for ptt
 FROM alpine
-RUN addgroup --gid 10001 --system nonroot \
-    && adduser  --uid 10000 --system --ingroup nonroot --home /home/nonroot nonroot; \
-    apk update; apk add --no-cache tini build-base judy-dev perl bind-tools
+RUN apk update; apk add --no-cache tini build-base judy-dev perl bind-tools
 
 COPY --from=cbuild /src/compile/rulechef/rulechef /bin/rulechef
 COPY --from=cbuild /src/compile/rulecat/rulecat /bin/rulecat
@@ -50,7 +48,6 @@ COPY /scripts/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 WORKDIR /data
-USER nonroot
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/docker-entrypoint.sh"]
 CMD ["sh"]
