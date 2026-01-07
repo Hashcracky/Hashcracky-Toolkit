@@ -25,6 +25,10 @@ The image currently builds and bundles the following projects:
   - Source: [hashcat/hashcat-utils](https://github.com/hashcat/hashcat-utils)  
   - Description: A collection of helper tools and several `*.pl` scripts that assist in wordlist and rule processing for hashcat.
 
+- **ruleprocessorY**
+  - Source: [0xVavaldi](https://github.com/0xVavaldi/ruleprocessorY)
+  - Description: Rule Processor Y is a next-gen Rule processor with multibyte character support built for hashcat. 
+
 All of these tools are copied into `/bin` in the final runtime image so they are available directly on the `PATH`.
 
 ## Image Layout

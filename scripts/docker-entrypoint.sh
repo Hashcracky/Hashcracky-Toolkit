@@ -24,22 +24,26 @@ echo "  - ptt"
 echo "  - brainstorm"
 echo "  - rulechef"
 echo "  - rulecat"
+echo "  - ruleprocessorY"
 echo "  - hashcat-utils (*.bin, *.pl)"
 echo
 echo "Below is a brief overview and project links for each tool."
 echo
 
 show_tool_info "ptt" \
-    "https://github.com/hashcracky/ptt" 
+    "https://github.com/hashcracky/ptt"
 
 show_tool_info "brainstorm" \
-    "https://github.com/hashcracky/brainstorm" 
+    "https://github.com/hashcracky/brainstorm"
 
 show_tool_info "rulechef" \
-    "https://github.com/Cynosureprime/rulechef" 
+    "https://github.com/Cynosureprime/rulechef"
 
 show_tool_info "rulecat" \
-    "https://github.com/Cynosureprime/rulecat" 
+    "https://github.com/Cynosureprime/rulecat"
+
+show_tool_info "ruleprocessorY" \
+    "https://github.com/0xVavaldi/ruleprocessorY"
 
 echo "-------------------------------------------------------------------"
 echo "Hashcat-utils (binaries and Perl scripts)"
